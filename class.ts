@@ -3,7 +3,7 @@ class Word {
   constructor(word: string) {
     this.word = word;
   }
-  getWord() {
+  getWord(): string {
     return this.word;
   }
 }

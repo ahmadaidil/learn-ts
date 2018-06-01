@@ -3,7 +3,7 @@ class Human {
   constructor(sex: string) {
     this.sex = sex;
   }
-  identify() {
+  identify(): string {
     return `My sex is ${this.sex}`;
   }
 }
@@ -12,7 +12,7 @@ class Woman extends Human {
   constructor(sex: string = 'woman') {
     super(sex);
   }
-  cooking() {
+  cooking(): string {
     return 'woman is cooking ...';
   }
 }
@@ -21,7 +21,7 @@ class Man extends Human {
   constructor(sex: string = 'man') {
     super(sex);
   }
-  playing() {
+  playing(): string {
     return 'man is playing ...';
   }
 }
